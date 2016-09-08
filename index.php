@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
       <div class="row">
-      <div class="content-area col-xs-12">
+      <div class="content-area col-sm-10 offset-sm-1">
 
    		<?php if ( have_posts() ) : ?>
 

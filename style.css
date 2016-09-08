@@ -7,10 +7,17 @@ Description: DdC es el tema creado especialmente para la Comisión Desafíos del
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
+Tags:
 Text Domain: RD-DdC
 
 This theme is also licensed under the GPL.
 I'll upload it to GitHub ASAP.
 */
 
+/* Estos estilos deben pasarse a la versión compilada de BS que se use en vez de los archivos alojados en CDN */
+a {
+  color: #555;
+}
+a:hover, a:focus {
+  color: #333;
+}

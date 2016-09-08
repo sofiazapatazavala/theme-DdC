@@ -51,3 +51,4 @@
         </nav>
         </div>
       </div>
+      <hr style="background-color: #1D4C4F; height: 5px;" />

@@ -1,5 +1,7 @@
-<?php get_header();
+<?php
+/* Template name: Portada */
+get_header();
 
-// Ya viene.
+echo('Ya viene.');
 
 get_footer(); ?>
