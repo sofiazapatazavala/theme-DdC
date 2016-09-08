@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<?php get_header(); ?>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700" rel="stylesheet">
-    <style type="text/css">
-      body { font-family: 'Raleway', sans-serif; }
-    </style>
-
-    <!-- Estilos de WordPress -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><!-- Se debe usar lo sugerido por WordPress posteriormente -->
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-    <?php wp_head(); ?>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row"><!-- Header -->
-        <div class="col-xs-12">
-          <img src="<?php bloginfo('template_directory'); ?>/img/logoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto">
-          <h2 class="text-xs-center">Comisión Desafíos del Conocimiento</h2>
-        </div>
-      </div>
-      <div class="row"><!-- Menú -->
-        <div class="col-xs-12">
-          <nav class="navbar navbar-light bg-faded">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-              &#9776;
-            </button>
-          <?php
-          // Use the new walker
-          wp_nav_menu( array(
-             'menu'            => 'principal',
-             'theme_location'  => 'principal',
-             'container'       => 'div',
-             'container_id'    => 'exCollapsingNavbar2',
-             'container_class' => 'collapse navbar-toggleable-sm',
-             'menu_id'         => false,
-             'menu_class'      => 'nav navbar-nav',
-             'depth'           => 2,
-             'fallback_cb'     => 'bs4navwalker::fallback',
-             'walker'          => new bs4navwalker()
-         ));
-          ?>
-        </nav>
-        </div>
-      </div>
       <div class="row">
       <div class="content-area col-xs-12">
 
@@ -97,11 +46,4 @@
     </div>
     </div>
 
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-    <?php wp_footer(); ?>
-  </body>
-</html>
+    <?php get_footer(); ?>
