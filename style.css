@@ -15,9 +15,15 @@ I'll upload it to GitHub ASAP.
 */
 
 /* Estos estilos deben pasarse a la versión compilada de BS que se use en vez de los archivos alojados en CDN */
+/* Globales */
 a {
   color: #555;
 }
 a:hover, a:focus {
   color: #333;
+}
+
+/* Diagramación */
+.the-big-header {
+  min-height: 100vh;
 }

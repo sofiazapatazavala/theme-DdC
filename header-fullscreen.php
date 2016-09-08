@@ -1,3 +1,10 @@
+<?php
+  /*
+   Para ordenar el código se programará el header de pantalla completa por separado, incluyendo condicionales.
+   En algún momento, si es posible, se unirá todo en header.php
+  */
+?>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -20,11 +27,12 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="container">
+    <div class="container the-big-header">
       <div class="row"><!-- Header -->
         <div class="col-xs-12">
-          <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/logoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto"></a>
+          <img src="<?php bloginfo('template_directory'); ?>/img/logoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto">
           <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
+          <small>Este header será de 100vh.</small>
         </div>
       </div>
       <div class="row"><!-- Menú -->
@@ -49,6 +57,15 @@
          ));
           ?>
         </nav>
+        <hr style="background-color: #1D4C4F; height: 5px;" />
         </div>
       </div>
-      <hr style="background-color: #1D4C4F; height: 5px;" />
+      <?php if ( is_front_page() ) { ?>
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h1 style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet nulla et convallis euismod. Ut ac venenatis dolor. Nam ultrices dui id eros sodales, eu.</h1>
+        </div>
+      </div>
+      <?php } ?>
+    </div>
+    <div class="container">

@@ -1,6 +1,6 @@
 <?php
 /* Template name: Portada */
-get_header();
+get_template_part('header', 'fullscreen');
 
 echo('Ya viene.');
 
