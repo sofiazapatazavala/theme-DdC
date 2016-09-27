@@ -19,11 +19,11 @@
 
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <div class="container">
       <div class="row"><!-- Header -->
         <div class="col-xs-12">
-          <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/logoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto"></a>
+          <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto"></a>
           <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
         </div>
       </div>
