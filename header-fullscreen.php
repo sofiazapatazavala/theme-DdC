@@ -40,7 +40,6 @@
           <div class="col-xs-12">
             <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto"></a>
             <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
-            <small>Este header será de 100vh.</small>
           </div>
         </div>
         <div class="row"><!-- Menú -->
@@ -71,7 +70,7 @@
         <?php if ( is_front_page() ) { ?>
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h1 class="m-y-1" style="font-weight: 300; color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet nulla et convallis euismod. Ut ac venenatis dolor. Nam ultrices dui id eros sodales, eu.</h1>
+            <h1 class="text-xs-center m-y-1" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
           </div>
         </div>
         <?php } ?>
