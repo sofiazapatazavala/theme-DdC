@@ -29,12 +29,16 @@
   <body <?php body_class(); ?>>
     <div class="the-big-header" <?php
       if (is_front_page()) {
-        // Do stuff
+        // Si es portada, muestra la imagen de portada.
         ?> style="background: url(<?php header_image(); ?>); background-repeat: cover; background-position: center;" <?php
       } else {
-        // Do other stuff
+        // Si no es portada, muestra la respectiva imagen destacada.
+        $id_foto = get_post_thumbnail_id();
+        $img_fondo = wp_get_attachment_image_src( $id_foto, '12-columnas', true );
+        $url_img_fondo = $img_fondo[0];
+        ?> style="background: url(<?php echo $img_fondo[0]; ?>); background-position:center; background-size: cover;" <?php
       }
-    ?>>
+    ?>>/
       <div class="container">
         <div class="row"><!-- Header -->
           <div class="col-xs-12">
