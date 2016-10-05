@@ -77,6 +77,13 @@
             <h1 class="text-xs-center m-y-1" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
           </div>
         </div>
+        <?php } elseif ( is_page_template('page-100vh.php') ) { ?>
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <h1 class="display-4 m-t-3 p-a-1 d-inline-block" style="background-color: rgba(51,51,51,0.6); color: #FFF; text-shadow: 1px 1px 3px #333;"><?php echo get_the_title(); ?></h1>
+            </div>
+          </div>
+
         <?php } ?>
       </div>
     </div>

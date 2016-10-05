@@ -20,12 +20,14 @@
         </div>
     </div>
     <hr class="sep-gris-claro">
-    <?php } elseif ( is_page() ) { ?>
+    <?php } elseif ( is_page() && ! is_page_template('page-100vh.php') ) { ?>
     <!-- Páginas -->
     <?php the_post_thumbnail('12-columnas', array( 'class' => 'img-responsive' )); ?>
     <?php the_title( '<h2 class="text-center">', '</h2>' );	?>
     <?php edit_post_link( 'Editar', '<h6 class="text-right editar">', '</h6>' ); ?>
     <hr class="sep-gris-claro">
+    <?php } elseif ( is_page_template('page-100vh.php') ) { ?>
+      <div class="p-y-2"></div>
     <?php } else { ?>
     <!-- Archivos -->
     <div class="row">
