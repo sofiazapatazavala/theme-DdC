@@ -27,6 +27,7 @@
           <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
         </div>
       </div>
+      <?php if ( has_nav_menu('principal') ) { ?>
       <div class="row"><!-- Menú -->
         <div class="col-xs-12">
           <nav class="navbar navbar-light bg-faded">
@@ -51,4 +52,5 @@
         </nav>
         </div>
       </div>
+      <?php } ?>
       <hr style="background-color: #1D4C4F; height: 5px;" />
