@@ -52,4 +52,35 @@ $defaults = array(
 add_theme_support( 'custom-header', $defaults );
 }
 
+// Custom Post Types para Documentos y Equipo (el calendario se usará con un plugin)
+add_action( 'init', 'create_posttype' );
+function create_posttype() {
+  register_post_type( 'ddc_documentos',
+    array(
+      'labels' => array(
+        'name' => __( 'Documentos' ),
+        'singular_name' => __( 'Documento' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'documentos'),
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+      //'taxonomies' => array('org_provincias'),
+    )
+  );
+  register_post_type( 'ddc_equipo',
+    array(
+      'labels' => array(
+        'name' => __( 'Equipo DdC' ),
+        'singular_name' => __( 'Miembro' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'organizacion'),
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+      //'taxonomies' => array('org_provincias'),
+    )
+  );
+}
+
  ?>

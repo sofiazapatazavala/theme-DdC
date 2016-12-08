@@ -42,11 +42,11 @@
       <div class="container">
         <div class="row"><!-- Header -->
           <div class="col-md-10 offset-md-1">
-            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
+            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
             <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
           </div>
           <div class="col-md-1">
-            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/social/fb.png" class="d-block mx-auto my-2"></a>
+            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-2"></a>
           </div>
         </div>
         <div class="row"><!-- Menú -->
