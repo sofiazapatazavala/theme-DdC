@@ -14,7 +14,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700" rel="stylesheet">
     <style type="text/css">
       body { font-family: 'Raleway', sans-serif; }
@@ -38,12 +38,15 @@
         $url_img_fondo = $img_fondo[0];
         ?> style="background: url(<?php echo $img_fondo[0]; ?>); background-position:center; background-size: cover;" <?php
       }
-    ?>>/
+    ?>>
       <div class="container">
         <div class="row"><!-- Header -->
-          <div class="col-xs-12">
-            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block m-x-auto"></a>
+          <div class="col-md-10 offset-md-1">
+            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
             <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
+          </div>
+          <div class="col-md-1">
+            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/social/fb.png" class="d-block mx-auto my-2"></a>
           </div>
         </div>
         <div class="row"><!-- Menú -->
@@ -74,7 +77,7 @@
         <?php if ( is_front_page() ) { ?>
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h1 class="text-xs-center m-y-1" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
+            <h1 class="text-xs-center my-1" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
           </div>
         </div>
         <?php } elseif ( is_page_template('page-100vh.php') ) { ?>

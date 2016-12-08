@@ -5,7 +5,7 @@ get_template_part('header', 'fullscreen');
 
 <div class="row">
   <div class="col-md-12">
-    <h1 class="m-y-2">Noticias</h1>
+    <h1 class="my-2">Noticias</h1>
   </div>
 </div>
 <div class="row the-content">
@@ -36,12 +36,12 @@ get_template_part('header', 'fullscreen');
 
 <div class="row">
   <div class="col-md-12">
-    <h1 class="m-y-2">Documentos</h1>
+    <h1 class="my-2">Documentos</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <h1 class="m-y-2">Agenda</h1>
+    <h1 class="my-2">Agenda</h1>
   </div>
 </div>
 
