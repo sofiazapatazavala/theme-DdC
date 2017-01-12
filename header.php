@@ -14,7 +14,7 @@
     </style>
 
     <!-- Estilos de WordPress -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><!-- Se debe usar lo sugerido por WordPress posteriormente -->
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><?php /* Se debe usar lo sugerido por WordPress posteriormente */ ?>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <?php wp_head(); ?>
