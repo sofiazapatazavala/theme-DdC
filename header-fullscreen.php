@@ -27,7 +27,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div class="the-big-header" <?php
+    <div class="background-container" <?php
       if (is_front_page()) {
         // Si es portada, muestra la imagen de portada.
         ?> style="background: url(<?php header_image(); ?>); background-repeat: cover; background-position: center;" <?php
@@ -39,11 +39,12 @@
         ?> style="background: url(<?php echo $img_fondo[0]; ?>); background-position:center; background-size: cover;" <?php
       }
     ?>>
+      <div class="the-big-header">
       <div class="container">
         <div class="row"><!-- Header -->
           <div class="col-md-10 offset-md-1">
-            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
-            <h2 class="text-center"><?php bloginfo( 'name' ); ?></h2>
+            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD-blanco.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
+            <h2 class="text-center color-blanco"><?php bloginfo( 'name' ); ?></h2>
           </div>
           <div class="col-md-1">
             <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-4"></a>
@@ -76,8 +77,11 @@
         </div>
         <?php if ( is_front_page() ) { ?>
         <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <h1 class="text-center my-3" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
+          <div class="col-md-5 mt-3">
+            <div class="skew-RD">
+              <h1 class="texto-fullscreen-portada my-3">Hacia un nuevo modelo para el conocimiento en Chile</h1>
+              <p class=" text-justify lead color-blanco">Queremos generar estrategia y programa sobre política pública para el conocimiento en Chile que sea sustentable, democrático y participativo.</p>
+            </div>
           </div>
         </div>
         <?php } elseif ( is_page_template('page-100vh.php') ) { ?>
@@ -89,5 +93,6 @@
 
         <?php } ?>
       </div>
+    </div>
     </div>
     <div class="container">
