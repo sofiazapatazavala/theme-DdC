@@ -43,14 +43,14 @@
         <div class="row"><!-- Header -->
           <div class="col-md-10 offset-md-1">
             <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
-            <h2 class="text-xs-center"><?php bloginfo( 'name' ); ?></h2>
+            <h2 class="text-center"><?php bloginfo( 'name' ); ?></h2>
           </div>
           <div class="col-md-1">
-            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-2"></a>
+            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-4"></a>
           </div>
         </div>
         <div class="row"><!-- Menú -->
-          <div class="col-xs-12">
+          <div class="col-12">
             <nav class="navbar navbar-light bg-faded">
               <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
               &#9776;
@@ -77,7 +77,7 @@
         <?php if ( is_front_page() ) { ?>
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h1 class="text-xs-center my-1" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
+            <h1 class="text-center my-3" style="font-weight: 300; color: #FFF;"><?php bloginfo('description'); ?></h1>
           </div>
         </div>
         <?php } elseif ( is_page_template('page-100vh.php') ) { ?>

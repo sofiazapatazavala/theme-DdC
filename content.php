@@ -27,7 +27,7 @@
     <?php edit_post_link( 'Editar', '<h6 class="text-right editar">', '</h6>' ); ?>
     <hr class="sep-gris-claro">
     <?php } elseif ( is_page_template('page-100vh.php') ) { ?>
-      <div class="p-y-2"></div>
+      <div class="py-4"></div>
     <?php } else { ?>
     <!-- Archivos -->
     <div class="row">

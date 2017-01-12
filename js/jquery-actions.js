@@ -1,6 +1,7 @@
 $(function() {
     // Transforma en botón los elementos para editar entradas
-    $(".post-edit-link").addClass("btn btn-block btn-secondary");
+    $(".more-link").addClass("btn btn-block btn-secondary my-3");
+    $(".post-edit-link").addClass("btn btn-block btn-warning my-3");
     $(".type-ddc_documentos .content a:first-child").addClass("btn btn-block btn-primary");
     // Si se usa opción de imagen de equipo, activar
     /*
