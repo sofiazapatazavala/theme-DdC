@@ -32,27 +32,27 @@
       </div>
       <?php if ( has_nav_menu('principal') ) { ?>
       <div class="row"><!-- Menú -->
-        <div class="col-12">
-          <nav class="navbar navbar-light bg-faded">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-              &#9776;
+        <div class="col">
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarDdC" aria-controls="navbarDdC" aria-expanded="false" aria-label="Toggle navigation">
+            &#9776;
             </button>
-          <?php
-          // Use the new walker
-          wp_nav_menu( array(
-             'menu'            => 'principal',
-             'theme_location'  => 'principal',
-             'container'       => 'div',
-             'container_id'    => 'exCollapsingNavbar2',
-             'container_class' => 'collapse navbar-toggleable-sm',
-             'menu_id'         => false,
-             'menu_class'      => 'nav navbar-nav',
-             'depth'           => 2,
-             'fallback_cb'     => 'bs4navwalker::fallback',
-             'walker'          => new bs4navwalker()
-         ));
-          ?>
-        </nav>
+            <?php
+              // Use the new walker
+              wp_nav_menu( array(
+                'menu'            => 'principal',
+                'theme_location'  => 'principal',
+                'container'       => 'div',
+                'container_id'    => 'navbarDdC',
+                'container_class' => 'collapse navbar-collapse',
+                'menu_id'         => false,
+                'menu_class'      => 'navbar-nav mr-auto',
+                'depth'           => 2,
+                'fallback_cb'     => 'bs4navwalker::fallback',
+                'walker'          => new bs4navwalker()
+              ));
+            ?>
+          </nav>
         </div>
       </div>
       <?php } ?>
