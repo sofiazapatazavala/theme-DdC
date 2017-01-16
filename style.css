@@ -24,19 +24,22 @@ a:hover, a:focus {
 }
 
 /* Helpers */
-.color-blanco {
+.texto-blanco {
   color: #FFF;
+}
+.fondo-verde-claro {
+  background-color: rgb(180,190,50);
 }
 /* Diagramación */
 .the-big-header {
   width: 100%;
   min-height: 100vh;
-  background: transparent linear-gradient(to bottom, rgba(26,94,48,0.6), rgba(26,94,48,0.6)) repeat scroll 0% 0%;
+  background: transparent linear-gradient(to bottom, rgba(26,94,48,0.6), rgba(180,190,50,0.6)) repeat scroll 0% 0%;
 }
 
 @font-face {
     font-family: Revolucion;
-    src: url(fonts/revolucion.woff);
+    src: url(fonts/Revolucion.woff);
 }
 
 .texto-fullscreen-portada {
@@ -48,6 +51,17 @@ a:hover, a:focus {
   text-transform: uppercase;
 }
 
+.container-logo-RD {
+  position: relative;
+  top: -2rem;
+}
 .skew-RD {
   transform: skewY(-10deg);
+}
+.antiskew-RD {
+  transform: skewY(10deg);
+}
+/* Imágenes */
+.logo-RD {
+  max-width: 8rem;
 }

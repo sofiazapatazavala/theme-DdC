@@ -22,12 +22,16 @@
   <body <?php body_class(); ?>>
     <div class="container">
       <div class="row"><!-- Header -->
-        <div class="col-md-10 offset-md-1">
-          <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
-          <h2 class="text-center"><?php bloginfo( 'name' ); ?></h2>
+        <div class="col-4 offset-4 col-md-3 offset-md-0 col-lg-2">
+          <div class="fondo-verde-claro container-logo-RD skew-RD pt-1">
+            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9">
+          <h2 class="text-center text-md-left my-1 mb-md-0 mt-md-5"><?php bloginfo( 'name' ); ?></h2>
         </div>
         <div class="col-md-1">
-          <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-4"></a>
+          <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-3 mb-md-0 mt-md-5"></a>
         </div>
       </div>
       <?php if ( has_nav_menu('principal') ) { ?>

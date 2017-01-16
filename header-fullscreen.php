@@ -42,12 +42,16 @@
       <div class="the-big-header">
       <div class="container">
         <div class="row"><!-- Header -->
-          <div class="col-md-10 offset-md-1">
-            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD-blanco.svg" style="max-width: 200px;" class="img-fluid d-block mx-auto"></a>
-            <h2 class="text-center color-blanco"><?php bloginfo( 'name' ); ?></h2>
+          <div class="col-4 offset-4 col-md-3 offset-md-0 col-lg-2">
+            <div class="fondo-verde-claro container-logo-RD skew-RD pt-1">
+              <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <h2 class="text-center text-md-left my-1 mb-md-0 mt-md-5 texto-blanco"><?php bloginfo( 'name' ); ?></h2>
           </div>
           <div class="col-md-1">
-            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-4"></a>
+            <a href="https://www.facebook.com/RD.CTH/?fref=ts" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/social/fb.png" class="d-block mx-auto my-3 mb-md-0 mt-md-5"></a>
           </div>
         </div>
         <div class="row"><!-- Menú -->
@@ -78,9 +82,9 @@
         <?php if ( is_front_page() ) { ?>
         <div class="row">
           <div class="col-md-5 mt-3">
-            <div class="skew-RD">
-              <h1 class="texto-fullscreen-portada my-3">Hacia un nuevo modelo para el conocimiento en Chile</h1>
-              <p class=" text-justify lead color-blanco">Queremos generar estrategia y programa sobre política pública para el conocimiento en Chile que sea sustentable, democrático y participativo.</p>
+            <div class="">
+              <h1 class="skew-RD texto-fullscreen-portada mb-5">Hacia un nuevo modelo para el conocimiento en Chile</h1>
+              <p class="lead texto-blanco">Queremos generar estrategia y programa sobre política pública para el conocimiento en Chile que sea sustentable, democrático y participativo.</p>
             </div>
           </div>
         </div>
