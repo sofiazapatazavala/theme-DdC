@@ -61,6 +61,9 @@ a:hover, a:focus {
 .antiskew-RD {
   transform: skewY(10deg);
 }
+.hr-menu {
+  background-color: #FFF;
+}
 /* Imágenes */
 .logo-RD {
   max-width: 8rem;

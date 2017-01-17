@@ -24,7 +24,7 @@
       <div class="row"><!-- Header -->
         <div class="col-4 offset-4 col-md-3 offset-md-0 col-lg-2">
           <div class="fondo-verde-claro container-logo-RD skew-RD pt-1">
-            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
+            <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/logoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
           </div>
         </div>
         <div class="col-md-8 col-lg-9">

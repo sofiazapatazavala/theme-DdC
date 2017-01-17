@@ -20,10 +20,12 @@
       body { font-family: 'Raleway', sans-serif; }
     </style>
 
+    <!-- Otras cosas de header -->
+    <link rel="shortcut icon" href="<?php echo get_parent_theme_file_uri(); ?>/img/favicon.ico">
+
     <!-- Estilos de WordPress -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><!-- Se debe usar lo sugerido por WordPress posteriormente -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
@@ -44,7 +46,7 @@
         <div class="row"><!-- Header -->
           <div class="col-4 offset-4 col-md-3 offset-md-0 col-lg-2">
             <div class="fondo-verde-claro container-logo-RD skew-RD pt-1">
-              <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/LogoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
+              <a href="http://www.revoluciondemocratica.cl/" target="_blank"><img src="<?php echo get_parent_theme_file_uri(); ?>/img/logoRD16.svg" class="img-fluid d-block mx-auto mt-5 antiskew-RD logo-RD"></a>
             </div>
           </div>
           <div class="col-md-8 col-lg-9">
@@ -56,7 +58,7 @@
         </div>
         <div class="row"><!-- Menú -->
           <div class="col">
-            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <nav class="navbar navbar-toggleable-md navbar-inverse">
               <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarDdC" aria-controls="navbarDdC" aria-expanded="false" aria-label="Toggle navigation">
               &#9776;
               </button>
@@ -76,7 +78,7 @@
                 ));
               ?>
             </nav>
-            <hr style="background-color: #CCC; height: 5px;" />
+            <hr class="p-0 mt-1 hr-menu">
           </div>
         </div>
         <?php if ( is_front_page() ) { ?>
