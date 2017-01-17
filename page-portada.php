@@ -4,8 +4,11 @@ get_template_part('header', 'fullscreen');
  ?>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-10">
     <h1 class="my-4">Noticias</h1>
+  </div>
+  <div class="col-md-2">
+    <a class="btn btn-secondary btn-block my-4" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" role="button">Ver todas</a>
   </div>
 </div>
 <div class="row the-content">
@@ -35,8 +38,11 @@ get_template_part('header', 'fullscreen');
 </div>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-10">
     <h1 class="my-4">Documentos</h1>
+  </div>
+  <div class="col-md-2">
+    <a href="<?php echo get_post_type_archive_link( 'ddc_documentos' ); ?>" class="btn btn-secondary btn-block my-4" role="button">Ver todos</a>
   </div>
 </div>
 <div class="row the-docs">
@@ -54,11 +60,11 @@ get_template_part('header', 'fullscreen');
             <div align="center">
               <?php echo get_the_post_thumbnail( $page->ID, 'portada', array( 'class' => 'img-responsive' ) ); ?>
             </div>
-            <h6 class="text-center categoria-portada"><?php the_category('&bull;'); ?></h6>
-            <?php the_title( sprintf( '<h3 class="text-center"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ) ?>
+            <h6 class="text-center card-subtitle categoria-portada"><?php the_category('&bull;'); ?></h6>
+            <?php the_title( sprintf( '<h3 class="text-center card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ) ?>
           </header>
-          <div class="content">
-            <?php the_content(); ?>
+          <div class="content card-text">
+            <?php the_content('Más'); ?>
           </div>
           <footer class="entry-footer">
           <?php edit_post_link( __( 'Editar', 'RD-DdC' ) ); ?>

@@ -8,7 +8,7 @@
         $img_fondo = wp_get_attachment_image_src( $id_foto, '12-columnas', true );
         $url_img_fondo = $img_fondo[0];
     ?>
-    <div style="background-image: url(<?php echo $img_fondo[0]; ?>);" class="titulo-single">
+    <div<?php if ( has_post_thumbnail() ) { ?> style="background-image: url(<?php echo $img_fondo[0]; ?>);"<?php } ?> class="titulo-single">
         <?php the_title( '<h3 class="titular fondo-gris">', '</h3>' );	?>
     </div>
     <div class="row">
